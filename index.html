@@ -7,7 +7,7 @@
     </head>
     <body>
         <header>
-            <h1 style="color:gold">Hayley Williams</h1>
+            <h1>Hayley Williams</h1>
         </header>
         <nav>
             <ul>
@@ -29,7 +29,7 @@
             <h2>Paramore</h2>
             <p>Comenzando desde 2005 y hasta el presente, Hayley Williams forma parte de la banda "Paramore" como vocalista principal, teclista y compositora</p>
             <p>Paramore ha, desde sus comienzos, publicado 6 álbumes</p>
-            <table style="border: 1px solid black;">
+            <table>
                 <tr>
                     <th>Título</th>
                     <th>All We Know is Falling</th>
@@ -57,7 +57,7 @@
             <!--insertar información sobre el tiempo del artista en la banda-->
         </section>
         <section id="Solista">
-            <article>
+            <article id="Petals">
                 <h2>Petals for Armor</h2>
                 <h3>Su primer album como solista, lanzado en 2020</h3>
                 <figure>
@@ -66,7 +66,7 @@
                 </figure>
                 <p>La salida de ese album fue anunciada a inicios de 2020 con el sencillo "<a href="https://youtu.be/8lSj5k2K7w0?si=KoCogMFw_EDxeDXF" target="_blank">Simmer</a>"</p>
             </article>
-            <article>
+            <article id="Flowers">
                 <h2>Flowers for Vases/Descansos</h2>
                 <h3>El segundo album de la artista saldría en 2021</h3>
                 <figure>
@@ -86,7 +86,7 @@
                 <p>Más tarde, en la <a href="https://www.hayleywilliams.net/" target="_blank">página web</a> de la artista, 17 canciones aparecerían disponibles para su reproducción</p>
                 <p>Fueron estas, con la adición de tres nuevas, que serían luego recopiladas para el lanzamiento oficial del album en servicios de streaming</p>
                 <h4>El album posee un total de 20 canciones</h4>
-                <table style="border: 1px solid black;">
+                <table>
                     <tr>
                         <th>Título</th>
                         <th>Reproducir</th>
@@ -255,7 +255,25 @@
             <p>Entonces, es en 2016 que, junto a su estilista y amigo Brian O'Connor, lanza <a href="https://gooddyeyoung.com/" target="_blank">Good Dye Young</a>. Una compañía de tinturas para el cabello con el propósito de ser menos nocivo además de ser vegano y libre de crueldad en su proceso</p>
             <!--Info sobre la marca "Good Dye Young"-->
         </section>
-        
         </main>
+        <footer>
+            <h2>Formulario de contacto</h2>
+            <form>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="Nombre">Nombre:</label>
+                    <input required type="text" placeholder="Nombre" name="Nombre"><br><br>
+                    <label for="Apellido">Apellido:</label>
+                    <input required type="text" placeholder="Apellido" name="Apellido"><br><br>
+                    <label for="email">Correo Electrónico:</label>
+                    <input required type="email" placeholder="example@test.com">
+                </fieldset>
+                <fieldset>
+                    <legend>Mensaje</legend>
+                    <textarea required maxlength="255"></textarea>
+                    <input type="submit">
+                </fieldset>
+            </form>
+        </footer>
     </body>
 </html>
