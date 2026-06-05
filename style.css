@@ -196,3 +196,32 @@ main{
         margin-right: 25px;
     }
 /* Fin estilos Petals */
+/* Estilos sección flowers */
+#flowersdrop{
+    margin: 0px;
+    padding: 0px;
+}
+#flowersdrop:hover{
+    background-color: rgb(71,1,32);
+    border-radius: 10px;
+}
+    #flowersdrop:hover .flowersdwn{
+        display: block;
+    }
+    #flowersdrop:hover .flowersup{
+        display: none;
+    }
+    #flowersdrop:hover #Flowers{
+        display:block;
+    }
+    .flowersdwn{
+        display: none;
+        position: relative;
+    }
+    #Flowers{
+        display: none;
+        position: relative;
+        padding: 0px 25px 25px 25px;
+        margin: 0px 25px 25px 25px;
+    }
+/* Fin estilos flowers */
