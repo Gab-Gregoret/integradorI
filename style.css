@@ -225,3 +225,46 @@ main{
         margin: 0px 25px 25px 25px;
     }
 /* Fin estilos flowers */
+/* Estilos Sección Ego */
+#egodrop:hover{
+    color: black;
+    border-radius: 10px;
+    background-image: url(assets/);
+}
+    #egodrop .egodwn{
+        display: none;
+        position: relative;
+    }
+    #egodreop:hover .egoup{
+        display: none;
+    }
+    #egodrop:hover .egodwn{
+        display: block;
+    }
+    #egodrop:hover #Ego{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Ego{
+        display: none;
+        padding: 0px 25px 25px 25px;
+        margin: 0px 25px 25px 25px;
+    }
+        #Ego figure{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+            #Ego figure figcaption{
+                width: 150px;
+            }
+        #Ego table{
+            background-image: linear-gradient(to right, rgb(22,22,22),rgb(102,102,102));
+        }
+            #Ego table, tr, th, td{
+                border: 2px solid;
+                border-collapse: collapse;
+                color: rgb(175,175,175);
+            }
+/* Fin estilos Ego */
