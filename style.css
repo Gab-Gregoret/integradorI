@@ -292,3 +292,19 @@ main{
                 color: rgb(175,175,175);
             }
 /* Fin estilos Ego */
+/* Media queries */
+@media screen and (width<=768px){
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    ul li:hover ul.menusolista{
+        display: inline-block;
+        width: 75%;
+        text-align: center;
+        left: 12.5%;
+        top: 100%;
+        z-index: 999;
+    }
+}
+/* Fin media queries */
