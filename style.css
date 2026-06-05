@@ -168,3 +168,31 @@ main{
         border-collapse: collapse;
     }
 /* Fin estilos sección Paramore */
+/* Estilos sección Petals */
+#petalsdrop{
+    padding: 0px;
+}
+#petalsdrop:hover{
+    background-color: rgba(213,154,159);
+    border-radius: 10px;
+}
+    #petalsdrop:hover .petalsdwn{
+        display: block;
+    }
+    #petalsdrop:hover .petalsup{
+        display: none;
+    }
+    #petalsdrop:hover #Petals{
+        display: block;
+    }
+    .petalsdwn{
+        display: none;
+        position: relative;
+    }
+    #Petals{
+        position: relative;
+        display: none;
+        padding: 0px 25px 25px 25px;
+        margin-right: 25px;
+    }
+/* Fin estilos Petals */
