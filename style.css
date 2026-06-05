@@ -1,0 +1,96 @@
+/* Estilización del header de la página */
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    color:gold;
+    border-style: none none solid none;
+    padding: 0px;
+    margin-right: 0%;
+    background-color: rgb(22, 22, 22);
+}
+    header h1{
+        font-family: "Imperial Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 100px;
+    }
+    nav{
+        width: 100%;
+    }
+    nav ul{
+            display: flex;
+            flex-direction: row;
+            gap: 15%;
+            padding: none;
+    }
+        ul{
+            list-style: none;
+            background-color: rgb(22,22,22);
+            border-style: solid solid none solid;
+            border-color: gold;
+            margin: 0px;
+        }
+            ul li{
+                position: relative;
+            }
+                ul li a{
+                    display: inline-block;
+                    padding: 25px;
+                    color: #FFF;
+                    text-decoration: none;
+                    text-align: center;
+                    font-size: 25px;
+                    margin: none;
+                }
+                    ul li a[href="#Solista"]:hover{
+                        background-image: url(assets/icons/hayleyicon.png);
+                        background-size: cover;
+                        background-position: 0px;   
+                        color: #e4d019;
+                    }
+                    ul li a[href="#Paramore"]:hover{
+                        background-image: url(assets/icons/logoparamore.png);
+                        background-size:cover;
+                        background-position: 0px;
+                        color: crimson;
+                    }
+                    ul li a[href="#Sello"]:hover{
+                        background-image: url(assets/icons/Post_Atlantic.jpg);
+                        background-size:cover;
+                        background-position: 0px;
+                        color: transparent;
+                    }
+                    ul li a[href="#GDY"]:hover{
+                        background-image: url(assets/icons/GDYlogo.png);
+                        background-size: contain;
+                        background-position: 50%;
+                        background-repeat: no-repeat;
+                        color: transparent;
+                    }
+                ul li ul.menusolista{
+                    position: absolute;
+                    display: block;
+                    border-style: solid;
+                    border-radius: 5px;
+                    margin: none;
+                    padding: none;
+                }
+                    ul li ul.menusolista li{
+                        display: block;
+                        background-color: goldenrod;
+                    }
+                    ul li ul.menusolista li:hover{
+                        background-color: #886f00;
+                        transform: scale(1.03);
+                    }
+            ul li:hover ul.menusolista{
+                display:inline-block;
+                width: 200%;
+                text-align: center;
+                left: 0%;
+                top: 100%;
+                z-index: 999;
+            }
+/* Fin sección de estilización del header */
