@@ -17,6 +17,7 @@ img{
     width: 200px;
     transition: width 2s;
     border-radius: 5px;
+    border-style: solid;
 }
 img:hover{
     width: 400px;
@@ -253,7 +254,7 @@ main{
 #egodrop:hover{
     color: black;
     border-radius: 10px;
-    background-image: url(assets/);
+    background-image: url(assets/hw_desktop_wallpaper_1.png);
 }
     #egodrop .egodwn{
         display: none;
