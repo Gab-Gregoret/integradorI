@@ -33,3 +33,19 @@ for (const imagen of imagenes) {
         }
 });
 }
+const pfaup = document.getElementsByClassName("petalsup");
+const pfadwn = document.getElementsByClassName("petalsdwn");
+const pfatop = document.getElementById("petalsdrop");
+const pfamain = document.getElementById("Petals");
+for(uppfa of pfaup){
+    uppfa.addEventListener("click", function(){
+        abrirSeccion(pfamain,pfaup,pfadwn);
+        pfatop.style.backgroundColor = "rgba(213,154,159)";
+    })
+}
+for(dwnpfa of pfadwn){
+    dwnpfa.addEventListener("click", function(){
+        cerrarSeccion(pfamain,pfaup,pfadwn);
+        pfatop.style.backgroundColor = "";
+    })
+}
