@@ -175,3 +175,23 @@ botonffv.addEventListener("click", function(){
         botonffv.innerText = "Ver lista de canciones";
     }
 })
+const egobtn = document.getElementById("egobtn");
+const listaego = document.getElementById("listaego");
+egobtn.addEventListener("click", function(){
+    if(listaego.style.display === "none"){
+        listaego.style.display = "block";
+    } else {
+        listaego.style.display = "none";
+    }
+})
+document.addEventListener("keydown", (event) => {
+    if(event.key === "Escape"){
+        cerrarSeccion(pfamain,pfaup,pfadwn);
+        cerrarSeccion(ffvmain,ffvup,ffvdwn);
+        cerrarSeccion(egomain,egoup,egodwn);
+        pfatop.style.backgroundColor = "";
+        ffvtop.style.backgroundColor = "";
+        egotop.style.backgroundImage = "";
+        egotop.style.color = "";
+    }
+})
