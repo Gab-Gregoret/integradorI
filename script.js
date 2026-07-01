@@ -100,9 +100,9 @@ volver.addEventListener("click", function(){
 });
 const formulario = document.getElementById("formulario");
 formulario.addEventListener('submit', async (event) => {
+    event.preventDefault(); 
     const edad = document.getElementById("edad").value;
     const nombre = document.getElementById("nombre").value;
-  event.preventDefault(); 
   try{
     if(edad <  18) throw new Error("Acceso restringido a menores");
     if(edad > 99) throw new Error("Ingrese una edad valida");
@@ -112,3 +112,35 @@ formulario.addEventListener('submit', async (event) => {
     alert(error.message);
   }
 });
+const cancionespfa = [
+    "Simmer",
+    "Leave It Alone",
+    "Cinnamon",
+    "Creepin'",
+    "Sudden Desire",
+    "Dead Horse",
+    "My Friend",
+    "Over Yet",
+    "Roses/Lotus/Violet/Iris",
+    "Why We Ever",
+    "Pure Love",
+    "Taken",
+    "Sugar On The Rim",
+    "Watch Me While I Bloom",
+    "Crystal Clear"
+];
+const cancionpfa = cancionespfa
+.map(item => `<li>${item}</li>`)
+.join("");
+const listapfa = document.getElementById("pfasongs");
+const botonpfa = document.getElementById("pfasongsbtn");
+botonpfa.addEventListener("click", function(){
+    if(listapfa.style.display === "none"){
+    listapfa.innerHTML = cancionpfa;
+    listapfa.style.display = "block";
+    botonpfa.innerText = "Cerrar lista";
+    } else{
+        listapfa.style.display = "none";
+        botonpfa.innerText = "Ver lista de canciones";
+    }
+})
