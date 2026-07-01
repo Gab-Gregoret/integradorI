@@ -144,3 +144,34 @@ botonpfa.addEventListener("click", function(){
         botonpfa.innerText = "Ver lista de canciones";
     }
 })
+const cancionesffv = [
+    "First Thing To Go",
+    "My Limb",
+    "Asystole",
+    "Trigger",
+    "Over Those Hills",
+    "Good Grief",
+    "Wait On",
+    "KYRH",
+    "Inordinary",
+    "HYD",
+    "No Use I Just Do",
+    "Find Me Here",
+    "Descansos",
+    "Just A Lover"
+];
+const cancionffv = cancionesffv
+.map(items => `<li>${items}</li>`)
+.join("");
+const listaffv = document.getElementById("ffvsongs");
+const botonffv = document.getElementById("ffvsongsbtn");
+botonffv.addEventListener("click", function(){
+    if(listaffv.style.display === "none"){
+    listaffv.innerHTML = cancionffv;
+    listaffv.style.display = "block";
+    botonffv.innerText = "Cerrar lista";
+    } else{
+        listaffv.style.display = "none";
+        botonffv.innerText = "Ver lista de canciones";
+    }
+})
