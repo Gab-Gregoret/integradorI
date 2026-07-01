@@ -258,6 +258,7 @@ main{
         position: relative;
         padding: 0px 25px 25px 25px;
         margin: 0px 25px 25px 25px;
+        align-items: center;
     }
     .flowersdwn{
         display: none;
@@ -311,6 +312,7 @@ main{
         display: none;
         padding: 0px 25px 25px 25px;
         margin: 0px 25px 25px 25px;
+        align-items: center;
     }
         #Ego figure{
             display: flex;
