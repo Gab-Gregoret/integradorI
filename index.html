@@ -5,11 +5,13 @@
         <meta charset="UTF-8">
         <title>Showcase</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Grand+Hotel&family=Imperial+Script&family=Rubik+Dirt&display=swap');
         </style>
     </head>
     <body>
+        <button id="volver" title="Volver arriba">TOP</button>
         <header>
             <h1>Hayley Williams</h1>
             <nav>
@@ -33,7 +35,7 @@
             <h2>Sobre la artista</h2>
             <p>Hayley Williams es una cantante y compositora estadounidense nacida el 27 de diciembre de 1988</p>
             <figure>
-                <img src="assets/hayley-tns.jpg" alt="Hayley">
+                <img class="img" src="assets/hayley-tns.jpg" alt="Hayley">
                 <figcaption>Hayley Williams en el programa televisivo "The Tonight Show."</figcaption>
             </figure>
         </section>
@@ -75,10 +77,12 @@
             <article id="Petals">
                 <h3>Su primer album como solista, lanzado en 2020</h3>
                 <figure>
-                    <img src="assets/Petals_for_Armor.jpg" alt="Portada Petals">
+                    <img class="img" src="assets/Petals_for_Armor.jpg" alt="Portada Petals">
                     <figcaption>Portada del album "<a href="https://youtube.com/playlist?list=PLqEfeecikPuhylmDjQoBfO5yW3Tec8Rd4&si=qusgOCa7c3f8RJCY" target="_blank">Petals for Armor</a>"</figcaption>
                 </figure>
                 <p>La salida de ese album fue anunciada a inicios de 2020 con el sencillo "<a href="https://youtu.be/8lSj5k2K7w0?si=KoCogMFw_EDxeDXF" target="_blank">Simmer</a>"</p>
+                <button id="pfasongsbtn" type="button">Ver lista de canciones</button>
+                <ul id="pfasongs"></ul>
             </article>
         </section>
         <section id="flowersdrop">
@@ -87,10 +91,12 @@
             <article id="Flowers">
                 <h3>El segundo album de la artista saldría en 2021</h3>
                 <figure>
-                    <img src="assets/Descansos.jpg" alt="Portada Descansos">
+                    <img class="img" src="assets/Descansos.jpg" alt="Portada Descansos">
                     <figcaption>Portada del album "<a href="https://youtube.com/playlist?list=OLAK5uy_mBTn5q83nfMzLdAmOvZ-SU0KQjnL3Hhes&si=cIgfOyEkR10RiHlS" target="_blank">Flowers for Vases / Descansos</a>"</figcaption>
                 </figure>
                 <p>El album marca el primer trabajo de la artista sin colaboración por parte de sus compañeros de la banda "<a href="#Paramore">Paramore</a>"</p>
+                <button id="ffvsongsbtn" type="button">Ver lista de canciones</button>
+                <ul id="ffvsongs"></ul>
             </article>
         </section>
         <section id="egodrop">
@@ -99,14 +105,14 @@
             <article id="Ego">
                 <h3>El tercer y más reciente album de la artista, 2025</h3>
                 <figure>
-                    <img src="assets/Ego.jpg" alt="Portada Ego Death">
+                    <img class="img" src="assets/Ego.jpg" alt="Portada Ego Death">
                     <figcaption>Portada del album "<a href="https://youtube.com/playlist?list=OLAK5uy_k_jV6vMtfPVaunly10OfmH_zii4IXgpqE&si=tTh2p-vnpSeFSDT-" target="_blank">Ego Death at a Bachelorette Party</a>"</figcaption>
                 </figure>
                 <p>El album fue anunciado originalmente con la salida del sencillo "<a href="https://youtu.be/dMrh5CW6IhI?si=-G5v0YdxLVpRTsqH" target="_blank">Mirtazapine</a>" lanzado como sorpresa en un programa de radio estadounidense</p>
                 <p>Más tarde, en la <a href="https://www.hayleywilliams.net/" target="_blank">página web</a> de la artista, 17 canciones aparecerían disponibles para su reproducción</p>
                 <p>Fueron estas, con la adición de tres nuevas, que serían luego recopiladas para el lanzamiento oficial del album en servicios de streaming</p>
-                <h4>El album posee un total de 20 canciones</h4>
-                <table>
+                <h4 id="egobtn">El album posee un total de 20 canciones</h4>
+                <table id="listaego">
                     <tr>
                         <th>Título</th>
                         <th>Reproducir</th>
@@ -276,16 +282,17 @@
             <p>Entonces, es en 2016 que, junto a su estilista y amigo Brian O'Connor, lanza <a href="https://gooddyeyoung.com/" target="_blank">Good Dye Young</a>. Una compañía de tinturas para el cabello con el propósito de ser menos nocivo además de ser vegano y libre de crueldad en su proceso</p>
             <!--Info sobre la marca "Good Dye Young"-->
         </section>
-        </main>
-        <footer>
+        <section>
             <h2>Formulario de contacto</h2>
-            <form>
+            <form id="formulario">
                 <fieldset>
                     <legend>Datos Personales</legend>
                     <label for="Nombre">Nombre:</label>
                     <input required type="text" placeholder="Nombre" name="Nombre"><br><br>
                     <label for="Apellido">Apellido:</label>
                     <input required type="text" placeholder="Apellido" name="Apellido"><br><br>
+                    <label for "Edad">Edad:</label>
+                    <input required type="number" placeholder="Edad" name="Edad" id="edad"><br><br>
                     <label for="email">Correo Electrónico:</label>
                     <input required type="email" placeholder="example@test.com">
                 </fieldset>
@@ -295,6 +302,9 @@
                     <input type="submit">
                 </fieldset>
             </form>
+        </section>
+        </main>
+        <footer>
         </footer>
     </body>
 </html>
