@@ -98,3 +98,17 @@ function topFunction() {
 volver.addEventListener("click", function(){
     topFunction();
 });
+const formulario = document.getElementById("formulario");
+formulario.addEventListener('submit', async (event) => {
+    const edad = document.getElementById("edad").value;
+    const nombre = document.getElementById("nombre").value;
+  event.preventDefault(); 
+  try{
+    if(edad <  18) throw new Error("Acceso restringido a menores");
+    if(edad > 99) throw new Error("Ingrese una edad valida");
+    alert("Gracias por contactarse con nosotros, " + nombre);
+  }
+  catch(error){
+    alert(error.message);
+  }
+});
