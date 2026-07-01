@@ -83,3 +83,18 @@ for (const dwne of egodwn){
         egotop.style.color = "";
     })
 }
+let volver = document.getElementById("volver");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    volver.style.display = "block";
+  } else {
+    volver.style.display = "none";
+  }
+}
+function topFunction() {
+  document.documentElement.scrollTop = 0;
+}
+volver.addEventListener("click", function(){
+    topFunction();
+});
