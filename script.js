@@ -49,3 +49,37 @@ for(dwnpfa of pfadwn){
         pfatop.style.backgroundColor = "";
     })
 }
+const ffvup = document.getElementsByClassName("flowersup");
+const ffvdwn = document.getElementsByClassName("flowersdwn");
+const ffvtop = document.getElementById("flowersdrop");
+const ffvmain = document.getElementById("Flowers");
+for (const upffv of ffvup){
+    upffv.addEventListener("click", function(){
+        abrirSeccion(ffvmain,ffvup,ffvdwn);
+        ffvtop.style.backgroundColor = "rgb(71,1,32)";
+    })
+}
+for (const dwnffv of ffvdwn){
+    dwnffv.addEventListener("click", function(){
+        cerrarSeccion(ffvmain,ffvup,ffvdwn);
+        ffvtop.style.backgroundColor = "";
+    })
+}
+const egoup = document.getElementsByClassName("egoup");
+const egodwn = document.getElementsByClassName("egodwn");
+const egotop = document.getElementById("egodrop");
+const egomain = document.getElementById("Ego");
+for (const upe of egoup){
+    upe.addEventListener("click", function(){
+        abrirSeccion(egomain,egoup,egodwn);
+        egotop.style.backgroundImage = "url('assets/hw_desktop_wallpaper_1.png')";
+        egotop.style.color = "black";
+    })
+}
+for (const dwne of egodwn){
+    dwne.addEventListener("click", function(){
+        cerrarSeccion(egomain,egoup,egodwn);
+        egotop.style.backgroundImage = "";
+        egotop.style.color = "";
+    })
+}
